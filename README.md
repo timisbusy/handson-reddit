@@ -49,9 +49,15 @@ Plus more calls from https://github.com/reddit/reddit/wiki
 
 ### Request
 
+https://github.com/mikeal/request/
+
 ### Superagent
 
+https://github.com/visionmedia/superagent/
+
 ### Under the Hood
+
+http://nodejs.org/api/http.html#http_http_request_options_callback
 
 ### Our Structure
 
