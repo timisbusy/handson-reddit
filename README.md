@@ -41,8 +41,22 @@ Plus more calls from https://github.com/reddit/reddit/wiki
 
 ## But Why?
 
+1. So you never have to do it again.
+2. So other people can use it to do amazing things.
+3. Feedback, contributions, the whole community thing.
+
 ## But How?
+
+### Request
+
+### Superagent
+
+### Under the Hood
+
+### Our Structure
 
 ## The Tests
 
 ## Let's Do This!
+
+Check out the tests, check out a branch, make a test pass, submit a pull request, repeat.
