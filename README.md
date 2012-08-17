@@ -15,6 +15,30 @@ We'll look at npm publish and make the project available via
 
 ## Usage
 
+### Simple
+
+> var reddit = require('handson-reddit'); // working title
+>
+> reddit.r('funny', function (err, results) {
+> 
+> });
+
+### Chainable
+
+> reddit.r('funny').new().exec(function (err, results) {
+> 
+> });
+
+Support new(), controversial(), hot()
+
+### Interactive
+
+> reddit.login(username, password, function (err, success) {
+> 
+> });
+
+Plus more calls from https://github.com/reddit/reddit/wiki
+
 ## But Why?
 
 ## But How?
