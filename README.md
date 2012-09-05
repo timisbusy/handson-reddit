@@ -59,9 +59,11 @@ https://github.com/visionmedia/superagent/
 
 http://nodejs.org/api/http.html#http_http_request_options_callback
 
-### Our Structure
-
 ## The Tests
+
+> git clone https://github.com/timisbusy/handson-reddit.git
+
+> make test
 
 ## Let's Do This!
 

@@ -1,0 +1,26 @@
+{
+  "author": "Tim Atkinson <timisbusy@gmail.com> (http://timisbusy.com)",
+  "name": "handson-reddit",
+  "description": "Node.js wrapper for Reddit API",
+  "version": "0.0.0",
+  "homepage": "https://github.com/timisbusy/handson-reddit",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/timisbusy/handson-reddit.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tests/test.js"
+  },
+  "engines": {
+    "node": "~0.6.9"
+  },
+  "dependencies": {
+    "superagent": "latest",
+    "request": "latest"
+  },
+  "devDependencies": {
+    "should": "latest",
+    "mocha": "latest"
+  }
+}
