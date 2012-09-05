@@ -17,7 +17,9 @@ We'll look at npm publish and make the project available via
 
 ### Simple
 
-> var reddit = require('handson-reddit'); // working title
+> var Reddit = require('handson-reddit'); // working title
+>
+> reddit = new Reddit();
 >
 > reddit.r('funny', function (err, results) {
 > 
@@ -62,8 +64,12 @@ http://nodejs.org/api/http.html#http_http_request_options_callback
 ## The Tests
 
 > git clone https://github.com/timisbusy/handson-reddit.git
-
-> make test
+>
+> cd handson-reddit
+>
+> npm install
+>
+> REDDIT_USERNAME=usernamehere REDDIT_PASSWORD=passwordhere make test
 
 ## Let's Do This!
 
