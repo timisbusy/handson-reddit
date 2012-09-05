@@ -29,7 +29,7 @@ We'll look at npm publish and make the project available via
 > 
 > });
 
-Support new(), controversial(), hot()
+Support new(), controversial(), top()
 
 ### Interactive
 
