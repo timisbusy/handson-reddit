@@ -5,7 +5,7 @@ Node.js wrapper for the Reddit API
 ## Purpose
 
 1. To create a nice node-friendly wrapper/client for the Reddit API.
-2. To learn how to create an API wrapper and share it using superagent and request. (smackdown)
+2. To learn how to create an API wrapper using superagent and request and share it using npm publish. (smackdown)
 
 ## Installation
 
