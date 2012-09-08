@@ -55,7 +55,7 @@ describe('request tests', function () {
 
   describe('supports chaining', function () {
     it('gets r/funny new', function (done) {
-      reddit.r('funny').neu().exec(function (err, res) {
+      reddit.r('funny')["new"]().exec(function (err, res) {
         if (err) { throw err; }
         done();
       });
