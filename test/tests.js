@@ -54,6 +54,12 @@ describe('request tests', function () {
   });
 
   describe('supports chaining', function () {
+    it('gets r/funny hot', function (done) {
+      reddit.r('funny').hot().exec(function (err, res) {
+        if (err) { throw err; }
+        done();
+      });
+    });
     it('gets r/funny new', function (done) {
       reddit.r('funny')["new"]().exec(function (err, res) {
         if (err) { throw err; }
@@ -71,6 +77,11 @@ describe('request tests', function () {
         if (err) { throw err; }
         done();
       });
+    });
+    it('does not get r/funny gobbledegook', function (done) {
+      if (reddit.r('funny').gobbledegook == null) {
+        done();
+      }
     });
   });
 
