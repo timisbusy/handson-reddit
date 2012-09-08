@@ -61,7 +61,7 @@ describe('request tests', function () {
       });
     });
     it('gets r/funny new', function (done) {
-      reddit.r('funny')["new"]().exec(function (err, res) {
+      reddit.r('funny').new().exec(function (err, res) {
         if (err) { throw err; }
         done();
       });
@@ -154,7 +154,7 @@ describe('superagent tests', function () {
       });
     });
     it('gets r/funny new', function (done) {
-      reddit2.r('funny')["new"]().exec(function (err, res) {
+      reddit2.r('funny').new().exec(function (err, res) {
         if (err) { throw err; }
         done();
       });
