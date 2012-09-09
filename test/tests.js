@@ -54,8 +54,14 @@ describe('request tests', function () {
   });
 
   describe('supports chaining', function () {
+    it('gets r/funny hot', function (done) {
+      reddit.r('funny').hot().exec(function (err, res) {
+        if (err) { throw err; }
+        done();
+      });
+    });
     it('gets r/funny new', function (done) {
-      reddit.r('funny')["new"]().exec(function (err, res) {
+      reddit.r('funny').new().exec(function (err, res) {
         if (err) { throw err; }
         done();
       });
@@ -71,6 +77,11 @@ describe('request tests', function () {
         if (err) { throw err; }
         done();
       });
+    });
+    it('does not get r/funny gobbledegook', function (done) {
+      if (reddit.r('funny').gobbledegook == null) {
+        done();
+      }
     });
   });
 
@@ -136,8 +147,14 @@ describe('superagent tests', function () {
   });
 
   describe('supports chaining', function () {
-    it('gets r/funny _new', function (done) {
-      reddit2.r('funny')._new().exec(function (err, res) {
+    it('gets r/funny hot', function (done) {
+      reddit2.r('funny').hot().exec(function (err, res) {
+        if (err) { throw err; }
+        done();
+      });
+    });
+    it('gets r/funny new', function (done) {
+      reddit2.r('funny').new().exec(function (err, res) {
         if (err) { throw err; }
         done();
       });
@@ -153,6 +170,11 @@ describe('superagent tests', function () {
         if (err) { throw err; }
         done();
       });
+    });
+    it('does not get r/funny gobbledegook', function (done) {
+      if (reddit2.r('funny').gobbledegook == null) {
+        done();
+      }
     });
   });
 
