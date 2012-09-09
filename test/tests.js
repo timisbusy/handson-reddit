@@ -78,11 +78,6 @@ describe('request tests', function () {
         done();
       });
     });
-    it('does not get r/funny gobbledegook', function (done) {
-      if (reddit.r('funny').gobbledegook == null) {
-        done();
-      }
-    });
   });
 
   describe('can log in', function () {
@@ -170,11 +165,6 @@ describe('superagent tests', function () {
         if (err) { throw err; }
         done();
       });
-    });
-    it('does not get r/funny gobbledegook', function (done) {
-      if (reddit2.r('funny').gobbledegook == null) {
-        done();
-      }
     });
   });
 
